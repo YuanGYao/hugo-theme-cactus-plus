@@ -1,0 +1,13 @@
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '{{ .Site.Params.ValineAPIID }}',
+        appKey: '{{ .Site.Params.ValineAPIKey }}',
+	notify:false, 
+    	verify:false, 
+    	avatar:'{{ .Site.Params.ValineAvatar }}', 
+    	placeholder: '{{ .Site.Params.ValinePlaceholder }}'
+    })
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a></noscript>

@@ -43,6 +43,10 @@
                 {{ partial "disqus.html" . }}
             {{ end }}
 
+	    {{ if .Site.Params.enableValine }}
+                {{ partial "valine.html" . }}
+            {{ end }}
+
             {{ if .Site.Params.showLatestPosts }}
                 {{ partial "latest-posts.html" . }}
             {{ end }}

@@ -21,6 +21,11 @@
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/monosocialiconsfont.css">
 		{{ end }}
 
+		{{ if .Site.Params.enableValine }}
+		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    		<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+		{{ end }}
+
 		{{ if .Site.Params.enableRSS }}
 		<link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 		{{ end }}
